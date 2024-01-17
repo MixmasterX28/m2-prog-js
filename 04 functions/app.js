@@ -71,6 +71,19 @@ class App
     {
         console.log("hello world!");
         globalFunction();
+
+        let classapp = new App();
+        classapp.newClassFunction();
+
+        this.functionwithargument("OBJECTION!! Your argument is invalid");
+
+        this.Marioprinter();
+
+        let superEvilLaugh = app.laughprinter();
+        console.log(superEvilLaugh);
+
+        let ThenumbsMason = app.ClassMath(5,3);
+        console.log(ThenumbsMason)
     }
 
     newClassFunction()
@@ -84,6 +97,24 @@ class App
         console.log("here:")
         console.log(aArgument)
     }
+
+    //hieronder 4.5//
+    Marioprinter()
+    {
+        console.log("MARIO!!")
+    }
+
+    laughprinter()
+    {
+        let evilLaugh = "BWAHAHAHA"
+        return evilLaugh
+    }
+
+    ClassMath(a,b)
+    {
+        let WhatNumbers = a + b;
+        return WhatNumbers
+    }
 }
 
 let app = new App();
@@ -93,3 +124,13 @@ let classapp = new App();
 classapp.newClassFunction();
 
 app.functionwithargument("OBJECTION!! Your argument is invalid");
+
+app.Marioprinter();
+
+let superEvilLaugh = app.laughprinter();
+console.log(superEvilLaugh);
+
+let ThenumbsMason = app.ClassMath(5,3);
+console.log(ThenumbsMason)
+
+
