@@ -72,7 +72,24 @@ class App
         console.log("hello world!");
         globalFunction();
     }
+
+    newClassFunction()
+    {
+        console.log("hi world in new class")
+    }
+
+    functionwithargument(aArgument)
+    {
+        console.log("Argument get over here!!")
+        console.log("here:")
+        console.log(aArgument)
+    }
 }
 
 let app = new App();
 app.runApplication();
+
+let classapp = new App();
+classapp.newClassFunction();
+
+app.functionwithargument("OBJECTION!! Your argument is invalid");
