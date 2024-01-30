@@ -69,6 +69,14 @@ class App
             headersclass[2].innerText = "commentaar"
             headersclass[3].innerText = "Ballin"
             headersclass[4].innerText = "Rock"
+
+            let data = ["het nieuws", "Mario kart 9 komt er eindelijk aan!", "from software werkt aan nieuw project", "Baldurs gate is game of the year", "een nieuwe tekken is uitgekomen"]
+
+            for (let i = 0; i < array.length; i++){
+                let element = data[i];
+                headersclass[i].innerText = i +": "+element;
+
+            }
         }
 }
 
